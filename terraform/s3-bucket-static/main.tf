@@ -7,7 +7,7 @@ variable "bucket_name" {
 }
 
 resource "aws_s3_bucket" "static_site_bucket" {
-    bucket = "static-site-${var.bucket_name}"  # Certifique-se de que o valor de var.bucket_name siga as regras de nomenclatura
+    bucket = "static-site-${var.bucket_name}"
 
     website {
         index_document = "index.html"
